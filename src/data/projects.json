@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Spy Digger",
+    "techStack": ["Python", "Nmap", "Network Security", "Port Scanning", "OS Detection"],
+    "description": [
+      "Developed a network scanning tool to identify open ports and detect operating systems",
+      "Features an interactive interface for versatile network analysis",
+      "Includes web vulnerability checking capabilities"
+    ],
+    "github": "https://github.com/firewallcracker/spy-digger",
+    "image": "/project1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "CipherLock",
+    "techStack": ["React", "TypeScript", "Supabase", "SHA-256", "Security"],
+    "description": [
+      "Built a secure, site-specific password manager with hashing and educational modules",
+      "Developed using React, TypeScript, and Supabase for modern web architecture",
+      "Patent Published: Reference Number 202421101247"
+    ],
+    "github": "https://github.com/firewallcracker/cipherlock",
+    "image": "/project2.jpg"
+  }
+]

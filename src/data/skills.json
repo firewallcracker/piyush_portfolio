@@ -1,0 +1,10 @@
+{
+  "Programming Languages": ["Python", "C++", "Java", "JavaScript"],
+  "Operating Systems": ["Kali Linux", "Windows", "Ubuntu"],
+  "Networking Protocols": ["TCP/IP", "UDP", "DNS", "HTTP/HTTPS"],
+  "Web Security": ["OWASP Top 10", "Web Application Firewalls", "Burp Suite", "SQLmap"],
+  "Penetration Testing": ["Nmap", "Metasploit", "Vulnerability Scanning", "VAPT"],
+  "Bug Bounty & Research": ["Responsible Disclosure", "Vulnerability Assessment", "Security Analysis", "Threat Modeling"],
+  "Tools & Platforms": ["Git", "GitHub", "MySQL", "VS Code"],
+  "Soft Skills": ["Communication", "Team Collaboration", "Time Management"]
+}
