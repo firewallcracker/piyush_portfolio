@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const blogPosts = [
@@ -91,6 +93,7 @@ const Blog = () => {
               variants={cardVariants}
               whileHover={{ y: -2 }}
               className="card cursor-pointer"
+              onClick={() => navigate(`/blog/${post.slug}`)}
             >
               <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
                 <span>{post.date}</span>

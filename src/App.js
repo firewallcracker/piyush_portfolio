@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import SecurityResearch from './pages/SecurityResearch';
 
@@ -35,6 +36,9 @@ const BackgroundWrapper = ({ darkMode, setDarkMode }) => {
       case '/security':
         return <CyberBackground />;
       default:
+        if (location.pathname.startsWith('/blog/')) {
+          return <ParticleField />;
+        }
         return <HackerBackground />;
     }
   };
@@ -50,6 +54,7 @@ const BackgroundWrapper = ({ darkMode, setDarkMode }) => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/security" element={<SecurityResearch />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

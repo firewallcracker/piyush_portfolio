@@ -64,4 +64,89 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0.8; }
   }
+  
+  /* Blog Content Styling */
+  .blog-content {
+    @apply leading-relaxed text-gray-800 dark:text-gray-200;
+  }
+  
+  .blog-content h1 {
+    @apply text-4xl font-bold mb-8 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+  }
+  
+  .blog-content h2 {
+    @apply text-2xl font-bold mb-6 mt-12 text-blue-600 dark:text-blue-400 border-b-2 border-blue-200 dark:border-blue-800 pb-2;
+  }
+  
+  .blog-content h3 {
+    @apply text-xl font-semibold mb-4 mt-8 text-gray-800 dark:text-gray-200;
+  }
+  
+  .blog-content p {
+    @apply mb-6 text-lg leading-relaxed;
+  }
+  
+  .blog-content ul, .blog-content ol {
+    @apply mb-6 ml-6 space-y-2;
+  }
+  
+  .blog-content li {
+    @apply text-lg leading-relaxed;
+  }
+  
+  .blog-content ul li {
+    @apply list-disc;
+  }
+  
+  .blog-content ol li {
+    @apply list-decimal;
+  }
+  
+  .blog-content strong {
+    @apply font-semibold text-blue-600 dark:text-blue-400;
+  }
+  
+  .blog-content a {
+    @apply text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline transition-colors;
+  }
+  
+  .blog-content hr {
+    @apply my-12 border-gray-300 dark:border-gray-700;
+  }
+  
+  .blog-content .inline-code {
+    @apply bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm font-mono text-red-600 dark:text-blue-400;
+  }
+  
+  .blog-content pre {
+    @apply m-0 whitespace-pre-wrap;
+  }
+  
+  .blog-content .code-box {
+    @apply bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 my-6 font-mono text-sm overflow-x-auto shadow-lg;
+  }
+  
+  .blog-content .code-box strong {
+    @apply block mb-3 text-gray-700 dark:text-gray-300 font-semibold text-base;
+  }
+  
+  .blog-content .code-box.vulnerable {
+    @apply border-l-4 border-l-red-500 bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20;
+  }
+  
+  .blog-content .code-box.secure {
+    @apply border-l-4 border-l-green-500 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20;
+  }
+  
+  .blog-content .vulnerability-section {
+    @apply my-12 p-8 rounded-2xl bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 shadow-xl border border-gray-200 dark:border-gray-700;
+  }
+  
+  .blog-content .vulnerability-section h3 {
+    @apply text-2xl font-bold mb-6 text-blue-600 dark:text-blue-400 border-b border-blue-200 dark:border-blue-800 pb-3;
+  }
+  
+  .blog-content blockquote {
+    @apply border-l-4 border-blue-500 pl-6 py-4 my-6 bg-blue-50 dark:bg-blue-900/20 rounded-r-lg italic text-blue-800 dark:text-blue-200;
+  }
 }
