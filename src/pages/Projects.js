@@ -51,7 +51,12 @@ const Projects = () => {
               <div className="relative p-6">
                 <div className="w-full h-48 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-transparent transform rotate-45 translate-x-full group-hover:translate-x-[-100%] transition-transform duration-1000"></div>
-                  <span className="text-5xl filter drop-shadow-lg">{index === 0 ? '🛡️' : index === 1 ? '🔍' : '💬'}</span>
+                  <span className="text-5xl filter drop-shadow-lg">{index === 0 ? '🕵️' : index === 1 ? '🔐' : '⚖️'}</span>
+                  {project.status && (
+                    <div className="absolute top-3 right-3 px-2 py-1 bg-green-500 text-white text-xs rounded-full font-medium">
+                      {project.status}
+                    </div>
+                  )}
                 </div>
 
                 <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
@@ -72,7 +77,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <ul className="text-gray-600 dark:text-gray-300 mb-8 space-y-2">
+                <ul className="text-gray-600 dark:text-gray-300 mb-6 space-y-2">
                   {project.description.map((point, pointIndex) => (
                     <motion.li 
                       key={pointIndex} 
@@ -86,6 +91,20 @@ const Projects = () => {
                     </motion.li>
                   ))}
                 </ul>
+
+                {project.features && (
+                  <div className="mb-6">
+                    <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Key Features:</h4>
+                    <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                      {project.features.slice(0, 3).map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start">
+                          <span className="text-green-500 mr-2 mt-0.5">•</span>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
                 <div className="mt-auto">
                   <a

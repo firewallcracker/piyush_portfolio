@@ -22,5 +22,25 @@
     ],
     "github": "https://github.com/firewallcracker/cipherlock",
     "image": "/project2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "eCourts Data Fetcher",
+    "techStack": ["Flask", "Python", "SQLite", "JavaScript", "HTML5", "CSS3", "Security"],
+    "description": [
+      "Professional Flask web application for Indian court data management with modern glassmorphism UI",
+      "Features 3 core search functions, dynamic cascading dropdowns, and comprehensive security implementations",
+      "Security-hardened with SQL injection prevention, XSS protection, and parameterized queries"
+    ],
+    "github": "https://github.com/firewallcracker/court-data-fetcher",
+    "image": "/project3.jpg",
+    "status": "Production Ready",
+    "features": [
+      "Case Status, Cause List, and Party Search functionality",
+      "35 Indian states/UTs with comprehensive district mappings",
+      "16+ case types covering all legal categories",
+      "Mock mode for reliable testing and demonstrations",
+      "Mobile-responsive design with modern animations"
+    ]
   }
 ]
