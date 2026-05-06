@@ -87,9 +87,9 @@
     "description": "Invented and developed an innovative password management solution, Cipher Lock, to enhance cybersecurity. The device generates and retrieves unique, site-specific, hashed passwords using SHA-256 encryption. It incorporates features such as user training modules."
   },
   "bugBounty": {
-    "totalFindings": "2",
-    "companiesHelped": "2",
-    "criticalVulns": "1",
+    "totalFindings": "3",
+    "companiesHelped": "3",
+    "criticalVulns": "2",
     "findings": [
       {
         "id": 1,
@@ -112,6 +112,17 @@
         "status": "Responsibly Disclosed",
         "date": "July 2024",
         "description": "Discovered boolean-based blind SQL injection bypassing ModSecurity WAF using advanced tamper scripts"
+      },
+      {
+        "id": 3,
+        "company": "Local Gateway (GX India/Genexis)",
+        "vulnerability": "Default Credential & Legacy Service Bypass",
+        "severity": "Critical",
+        "service": "Web Management Interface (Port 80/443)",
+        "impact": "Complete administrative takeover of the network perimeter, enabling DNS hijacking, traffic sniffing, and unauthorized WLAN configuration access",
+        "status": "Internally Documented / Lab Environment",
+        "date": "May 2026",
+        "description": "Identified legacy Boa 0.94.13 HTTP server utilizing factory-default administrative credentials (admin:admin). Confirmed susceptibility to Slowloris DoS (CVE-2007-6750) and potential unauthenticated information disclosure through legacy CGI scripts."
       }
     ]
   },
