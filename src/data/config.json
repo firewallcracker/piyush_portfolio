@@ -87,13 +87,13 @@
     "description": "Invented and developed an innovative password management solution, Cipher Lock, to enhance cybersecurity. The device generates and retrieves unique, site-specific, hashed passwords using SHA-256 encryption. It incorporates features such as user training modules."
   },
   "bugBounty": {
-    "totalFindings": "3",
-    "companiesHelped": "3",
+    "totalFindings": "5",
+    "companiesHelped": "5",
     "criticalVulns": "2",
     "findings": [
       {
         "id": 1,
-        "company": "Chembx",
+        "company": "Chexxx",
         "vulnerability": "Anonymous Diffie-Hellman Key Exchange MitM Vulnerability",
         "severity": "High",
         "service": "FTP Service (Port 21)",
@@ -104,7 +104,7 @@
       },
       {
         "id": 2,
-        "company": "Technos",
+        "company": "Techxx",
         "vulnerability": "SQL Injection in news-details.php",
         "severity": "Critical",
         "service": "Web Application (MySQL Database)",
@@ -115,7 +115,7 @@
       },
       {
         "id": 3,
-        "company": "Local Gateway (GX India/Genexis)",
+        "company": "Local Gatexxx",
         "vulnerability": "Default Credential & Legacy Service Bypass",
         "severity": "Critical",
         "service": "Web Management Interface (Port 80/443)",
@@ -123,6 +123,28 @@
         "status": "Internally Documented / Lab Environment",
         "date": "May 2026",
         "description": "Identified legacy Boa 0.94.13 HTTP server utilizing factory-default administrative credentials (admin:admin). Confirmed susceptibility to Slowloris DoS (CVE-2007-6750) and potential unauthenticated information disclosure through legacy CGI scripts."
+      },
+      {
+        "id": 4,
+        "company": "Sonaxxxx Nexxx Reposxxx",
+        "vulnerability": "Improper Access Control & Sensitive Artifact Disclosure",
+        "severity": "High",
+        "service": "Production Artifact Registry (Port 80/443)",
+        "impact": "Severe intellectual property exposure through reverse-engineering of proprietary application logic, leak of core payment gateway dependency structures, and internal corporate network topology reconnaissance",
+        "status": "Responsibly Disclosed",
+        "date": "May 2026",
+        "description": "Discovered global anonymous guest access enabled on a production Nexus instance, allowing unauthenticated navigation through internal software tracks, hierarchical directory tree mapping, proprietary Android/iOS build artifact extraction (.jar/.aar), and internal deployment IP metadata leakage."
+      },
+      {
+        "id": 5,
+        "company": "Bancoxxx",
+        "vulnerability": "Sensitive Information Disclosure & Unrestricted API Key Leakage",
+        "severity": "Medium",
+        "service": "Web Application (Port 8443 / HTTPS)",
+        "impact": "Potential financial impact through unauthorized billing consumption on the corporate cloud account, quota exhaustion leading to a Denial of Service (DoS) for legitimate application maps, and unauthorized utilization of paid infrastructure services.",
+        "status": "Responsibly Disclosed",
+        "date": "December 2025",
+        "description": "Discovered an unrestricted Google Maps API key hardcoded in client-side source code with no HTTP referrer restrictions, IP whitelisting, or scope limitations, allowing unauthenticated extraction and misuse by external actors."
       }
     ]
   },
