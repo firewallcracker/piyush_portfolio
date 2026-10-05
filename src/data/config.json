@@ -45,23 +45,15 @@
   ],
   "experience": [
     {
-      "title": "Cybersecurity and Ethical Hacking Intern",
-      "company": "Codtech IT Solutions",
-      "duration": "Feb 2024 - Mar 2024",
-      "location": "Raipur",
-      "description": [
-        "Gained hands-on experience with SQL Injection, vulnerability scanning, and ethical hacking techniques",
-        "Developed skills in cybersecurity, including practical knowledge of security best practices and vulnerabilities"
-      ]
-    },
-    {
-      "title": "Cybersecurity Intern",
-      "company": "Uptoskills",
-      "duration": "Feb 2025 - May 2025",
+      "title": "Application Security Tester Intern",
+      "company": "Bugsmirror",
+      "duration": "Jul 2026 - Present",
       "location": "Remote",
       "description": [
-        "Conducted VAPT on live websites",
-        "Reported and recommended fixes for security issues"
+        "Conduct application security testing and vulnerability assessments across client applications and internal systems",
+        "Build custom security lab environments to analyze attack vectors, defensive countermeasures, and kernel-level bypass mechanisms",
+        "Document vulnerability findings and collaborate on actionable remediation strategies to improve application resilience",
+        "Research emerging offensive and defensive security methodologies to strengthen security testing workflows"
       ]
     },
     {
@@ -77,6 +69,26 @@
         "Analyzed phishing and malware threats to understand attack vectors",
         "Documented findings and proposed mitigation techniques for common vulnerabilities",
         "Participated in weekly technical reviews and knowledge-sharing sessions"
+      ]
+    },
+    {
+      "title": "Cybersecurity Intern",
+      "company": "Uptoskills",
+      "duration": "Feb 2025 - May 2025",
+      "location": "Remote",
+      "description": [
+        "Conducted VAPT on live websites",
+        "Reported and recommended fixes for security issues"
+      ]
+    },
+    {
+      "title": "Cybersecurity and Ethical Hacking Intern",
+      "company": "Codtech IT Solutions",
+      "duration": "Feb 2024 - Mar 2024",
+      "location": "Raipur",
+      "description": [
+        "Gained hands-on experience with SQL Injection, vulnerability scanning, and ethical hacking techniques",
+        "Developed skills in cybersecurity, including practical knowledge of security best practices and vulnerabilities"
       ]
     }
   ],

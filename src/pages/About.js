@@ -45,26 +45,6 @@ const About = () => {
             </p>
           </motion.section>
 
-          {/* Education Section */}
-          <motion.section variants={itemVariants}>
-            <h2 className="text-3xl font-bold mb-8 text-center gradient-text">Education</h2>
-            <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
-              {config.education.map((edu, index) => (
-                <div key={index} className="card">
-                  <h3 className="text-xl font-semibold mb-2">{edu.degree}</h3>
-                  <p className="text-primary-600 mb-2">{edu.college}</p>
-                  <div className="flex justify-between text-gray-600 dark:text-gray-300">
-                    <span>{edu.year}</span>
-                    <span>{edu.location}</span>
-                  </div>
-                  {edu.percentage && (
-                    <p className="text-sm text-primary-600 mt-2">Percentage: {edu.percentage}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </motion.section>
-
           {/* Experience Section */}
           <motion.section variants={itemVariants}>
             <h2 className="text-3xl font-bold mb-8 text-center gradient-text">Experience</h2>
@@ -95,6 +75,26 @@ const About = () => {
                       </li>
                     ))}
                   </ul>
+                </div>
+              ))}
+            </div>
+          </motion.section>
+
+          {/* Education Section */}
+          <motion.section variants={itemVariants}>
+            <h2 className="text-3xl font-bold mb-8 text-center gradient-text">Education</h2>
+            <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+              {config.education.map((edu, index) => (
+                <div key={index} className="card">
+                  <h3 className="text-xl font-semibold mb-2">{edu.degree}</h3>
+                  <p className="text-primary-600 mb-2">{edu.college}</p>
+                  <div className="flex justify-between text-gray-600 dark:text-gray-300">
+                    <span>{edu.year}</span>
+                    <span>{edu.location}</span>
+                  </div>
+                  {edu.percentage && (
+                    <p className="text-sm text-primary-600 mt-2">Percentage: {edu.percentage}</p>
+                  )}
                 </div>
               ))}
             </div>
